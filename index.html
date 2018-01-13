@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Destination Unknown</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+<!--<nav class="navbar" role="navigation">-->
+    <!--<div class="nav-wrapper container">-->
+        <!--<a id="logo-container" href="#" class="brand-logo"></a>-->
+    <!--</div>-->
+<!--</nav>-->
+
+<div class="container">
+    <div class="row name">Destination Unknown</div>
+    <div class="row description">When you wanna go somewhere but you aren't sure where, take a peak and get
+        inspired.
+    </div>
+</div>
+
+<div class="container search">
+
+    <!-- Search field -->
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="search-wrapper">
+                <input type="text" class="validate" id="locationText"
+                       placeholder="Search for a city or location">
+                <button class="btn btn-primary searchBtn">Search</button>
+                <div id="locationLabel" class="error"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link" id="nav-photos-tab" data-toggle="tab" href="#nav-photos" role="tab"
+               aria-controls="nav-photos" aria-selected="true">Photos</a>
+            <a class="nav-item nav-link" id="nav-map-tab" data-toggle="tab" href="#nav-map" role="tab"
+               aria-controls="nav-map" aria-selected="false">Map</a>
+            <a class="nav-item nav-link" id="nav-forecast-tab" data-toggle="tab" href="#nav-forecast" role="tab"
+               aria-controls="nav-forecast" aria-selected="false">5-Day Forecast</a>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+
+        <!-- Photo output from Pixabay -->
+        <div class="tab-pane fade show active" id="nav-photos" role="tabpanel" aria-labelledby="nav-photos-tab">
+            <div class="row">
+                <div class="col s12" id="photos"></div>
+            </div>
+        </div>
+
+        <!-- Map output from Google -->
+        <div class="tab-pane fade show" id="nav-map" role="tabpanel" aria-labelledby="nav-map-tab">
+            <div class="row" id="mapRow">
+                <div class="col s12" id="map"></div>
+            </div>
+        </div>
+
+        <!-- Weather output -->
+        <div class="tab-pane fade show" id="nav-forecast" role="tabpanel" aria-labelledby="nav-forecast-tab">
+            <div class="row">
+                <div class="col m12 offset-m2" id="weather">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO8cVeyvpyuOR_gwywOHo-JohcbtyYSg8&libraries=places" async
+        defer></script>
+</body>
+
+</html>
