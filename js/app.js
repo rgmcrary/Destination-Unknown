@@ -1,5 +1,20 @@
 var mapInitialized = false;
 
+// Slick Carousel
+$(document).ready(function () {
+    $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});
+
 // Search Button
 $(".searchBtn").on("click", function () {
     handleClick($("input").val());
@@ -144,7 +159,7 @@ function getImages(location) {
             q: location,
             image_type: "photo",
             safesearch: true,
-            per_page: 9,
+            per_page: 6,
             category: "travel"
         });
 
@@ -158,7 +173,7 @@ function getImages(location) {
                 '<a  target="_blank" href="' +
                 response.hits[i].pageURL +
                 '">' +
-                '<img class="z-depth-1 hoverable" src="' +
+                '<img class="z-depth-1 hoverable pix-return" src="' +
                 response.hits[i].webformatURL +
                 '" />' +
                 "</a>"
