@@ -1,5 +1,5 @@
 body {
-background-image: url("../images/parchment.jpg");
+    background-image: url("../images/parchment.jpg");
     margin: 0px;
 }
 
@@ -26,10 +26,30 @@ nav .brand-logo {
 .description {
     padding-top: 20px;
     font-size: 20px;
+    text-align: center;
 }
 
-.search {
-    padding-top: 20px;
+.slideshow {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.carousel {
+    box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 1);
+}
+
+.carousel-img {
+    height: 25%;
+    width: 30%;
+    object-fit: cover;
+    max-height: 250px;
+}
+
+.search-field {
+    text-align: center
 }
 
 #locationText {
@@ -49,7 +69,6 @@ nav .brand-logo {
 .searchBtn:hover {
     background-color: seagreen;
 }
-
 
 .nav-tabs {
     padding-top: 30px;
@@ -71,19 +90,16 @@ a:hover {
 }
 
 #photos {
-    display: inline-block;
     background: white;
     margin-top: 30px;
-    padding-top: 25px;
     min-height: 150px;
 }
 
-#photos img {
+.pix-return {
+    display: inline-block !important;
     height: 25%;
     width: 30%;
-    padding: 4px;
     object-fit: cover;
-    max-height: 250px;
     vertical-align: middle;
     margin-top: 40px;
     margin-left: 20px;
