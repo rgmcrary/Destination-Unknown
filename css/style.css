@@ -3,21 +3,21 @@ body {
     margin: 0px;
 }
 
-nav ul a,
-nav .brand-logo {
-    color: #444;
-}
+/*nav ul a,*/
+/*nav .brand-logo {*/
+/*color: #444;*/
+/*}*/
 
-.navbar {
-    background: seagreen;
-    position: fixed;
-    z-index: 999;
-    height: 50px;
-    width: 100%;
-}
+/*.navbar {*/
+/*background: seagreen;*/
+/*position: fixed;*/
+/*z-index: 999;*/
+/*height: 50px;*/
+/*width: 100%;*/
+/*}*/
 
 .name {
-    padding-top: 30px;
+    padding-top: 20px;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -35,10 +35,16 @@ nav .brand-logo {
     height: 100%;
     max-width: 700px;
     margin: 50px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .carousel {
     box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 1);
+}
+
+img {
+    border-radius: 10px;
 }
 
 .carousel-img {
@@ -55,6 +61,7 @@ nav .brand-logo {
 #locationText {
     width: 280px;
     margin-right: 20px;
+    padding-left: 5px;
 }
 
 .searchBtn {
@@ -81,11 +88,11 @@ nav .brand-logo {
 }
 
 a {
-    color: seagreen;
+    color: black;
 }
 
 a:hover {
-    color: seagreen;
+    color: black;
     font-weight: bold;
 }
 
@@ -97,13 +104,15 @@ a:hover {
 
 .pix-return {
     display: inline-block !important;
-    height: 25%;
+    height: 40%;
     width: 30%;
     object-fit: cover;
     vertical-align: middle;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 12px;
+    border-radius: 10px;
 }
 
 #nav-map {
@@ -123,12 +132,18 @@ a:hover {
 }
 
 .weather-categories {
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: left;
     font-weight: bold;
     border: 1px solid black;
 }
 
 .weather-results {
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: 1px solid black;
 }
 
