@@ -5,14 +5,15 @@ $(document).ready(function () {
     $('.carousel').slick({
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 800,
         fade: true,
         cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1
     });
+    $('#photos').hide();
 });
 
 // Search Button
@@ -178,6 +179,7 @@ function getImages(location) {
                 '" />' +
                 "</a>"
             );
+            $("#photos").show();
         }
 
         console.log();
