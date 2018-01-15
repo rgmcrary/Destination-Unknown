@@ -17,16 +17,15 @@ body {
 /*}*/
 
 .name {
-    padding-top: 20px;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
 }
 
 .description {
-    padding-top: 20px;
     font-size: 20px;
     text-align: center;
+    padding-top: 5px;
 }
 
 .slideshow {
@@ -35,8 +34,8 @@ body {
     height: 100%;
     max-width: 700px;
     margin: 50px auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
 
 .carousel {
@@ -55,7 +54,8 @@ img {
 }
 
 .search-field {
-    text-align: center
+    text-align: center;
+    padding-top: 5px;
 }
 
 #locationText {
@@ -78,7 +78,7 @@ img {
 }
 
 .nav-tabs {
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .nav-link:hover {
@@ -97,7 +97,7 @@ a:hover {
 }
 
 #photos {
-    background: white;
+    /*background: white;*/
     margin-top: 30px;
     min-height: 150px;
 }
@@ -115,8 +115,9 @@ a:hover {
     border-radius: 10px;
 }
 
-#nav-map {
-    padding-top: 30px;
+#mapRow {
+    padding-top: 15px;
+    margin: 0px;
 }
 
 #weather {
