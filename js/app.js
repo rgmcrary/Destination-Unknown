@@ -13,7 +13,6 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
     });
-    $('#photos').hide();
 });
 
 // Search Button
@@ -149,9 +148,13 @@ function getPlacesData(lng, lat) {
     });
 }
 
+function resizeMap() {
+    google.maps.event.trigger(map, 'resize');
+}
+
 //  Pixabay API
 function getImages(location) {
-    $("#output").html("");
+    $("#photos").html("");
     var pixabayUrl = "https://pixabay.com/api/";
     pixabayUrl +=
         "?" +
@@ -179,7 +182,6 @@ function getImages(location) {
                 '" />' +
                 "</a>"
             );
-            $("#photos").show();
         }
 
         console.log();
