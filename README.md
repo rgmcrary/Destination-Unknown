@@ -14,6 +14,6 @@ The images in the carousel at the top of the app are also linked to return the s
 
 
 ## Check it out
-  <a href="https://rgmcrary.github.io/Destination-Unknown/" target="_blank">click for **Destination Unknown**</a>
+  <a href="https://rgmcrary.github.io/Destination-Unknown/" target="_blank">**Destination Unknown**</a>
 
 
