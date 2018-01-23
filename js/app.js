@@ -14,7 +14,7 @@ $(document).ready(function () {
         slidesToScroll: 1
     });                         
        
-$("a[href='#nav-map']").on('shown.bs.tab', function () {
+$("a[href='#nav-map-tab']").on('shown.bs.tab', function () {
      google.maps.event.trigger(map, 'resize');
     });
 });
