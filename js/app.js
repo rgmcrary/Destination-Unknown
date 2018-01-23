@@ -12,6 +12,10 @@ $(document).ready(function () {
         autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1
+    });                         
+       
+$("a[href='#nav-map']").on('shown.bs.tab', function () {
+     google.maps.event.trigger(map, 'resize');
     });
 });
 
@@ -148,9 +152,6 @@ function getPlacesData(lng, lat) {
     });
 }
 
-function resizeMap() {
-    google.maps.event.trigger(map, 'resize');
-}
 
 //  Pixabay API
 function getImages(location) {
